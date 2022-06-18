@@ -4,13 +4,14 @@
     padding: 0;
     --off-white: #f0f0f0;
     --dark-gray: #454545;
+    --footer-blue: #43689b;
 }
 
 .navigation {
     background-color: var(--off-white);
     position: relative;
     width: 50px;
-    height: 600px;
+    height: 650px;
 }
 
 .sidebar {
@@ -19,7 +20,7 @@
 
 .sidebar li {
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .sidebar li i {
@@ -109,4 +110,36 @@
     color: blue;
 }
 
+.song-player{
+    background-color: var(--footer-blue);
+    position: fixed;
+    top: 85%;
+    width: 100%;
+    height: 115px;
+}
 
+.song-player img{
+    max-width: 95px;
+    padding: 0.5rem;
+}
+
+.song-name{
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    color: white;
+}
+.song-name h5{
+    padding-bottom: 0.75rem;
+    font-weight: 100;
+}
+.song-player ul{
+    position: absolute;
+    top:40%;
+    left: 42%;
+    color: white;   
+}
+
+.song-player ul li{
+    margin-left: 9rem;
+}
