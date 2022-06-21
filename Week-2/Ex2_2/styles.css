@@ -1,0 +1,30 @@
+.main {
+
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
