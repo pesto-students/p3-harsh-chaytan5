@@ -6,7 +6,7 @@ Create a memoize function that remembers previous inputs and stores them in cach
 
     //Given reducer method:
     function add(a,b){
-        returna+b
+        return a+b;
     }
     //Create a method called memoize such that:
     const memoizeAdd = memoize(add);
