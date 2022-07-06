@@ -10,22 +10,26 @@
 
 .container-body {
     margin: auto;
+    max-width: 70vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* align-content: flex-start; */
-    /* gap: 10px; */
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* align-items: baseline; */
+    /* background-color: lightcoral; */
 }
 
-.container-body>article,.container-body>
-img {
-    width: 500px;
 
-    margin: 50px;
+
+.container-body>article {
+    width: 400px;
 }
 
 .container-body>img {
-    height: 320px;
+    max-width: 400px;
+    margin: 1rem 0;
 }
 
 .container-body article h2 {
@@ -50,26 +54,21 @@ img {
     margin: auto;
 }
 
-
-
-.article6{
-    /* justify-content:; */
-    
-}
-
-.container-form{
+.container-form {
     padding: 20px;
 }
-.container-form h2{
+
+.container-form h2 {
     text-align: center;
     margin: 20px;
 }
-.container-form div{
+
+.container-form div {
     text-align: center;
     padding: 10px;
 }
 
-#button-signup{
+#button-signup {
     text-decoration: none;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
@@ -79,7 +78,7 @@ img {
     border: none
 }
 
-#button-signup:hover{
+#button-signup:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     transition-duration: 0.2s;
@@ -95,16 +94,16 @@ img {
     border-top-right-radius: 41px;
 }
 
-.container-footer h2{
+.container-footer h2 {
     margin-bottom: 20px;
 }
 
-.container-footer p{
+.container-footer p {
     margin: 20px;
     display: inline;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: var(--secondary-color);
 }
