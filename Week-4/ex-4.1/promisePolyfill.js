@@ -45,6 +45,42 @@ function MyPromise(executor) {
 
 }
 
+MyPromise.resolve = val => {
+    return new MyPromise(function executor(resolve, reject) {
+        resolve(val);
+    })
+}
+
+MyPromise.reject = reason => {
+    return new MyPromise(function executor(resolve, reject) {
+        reject(reason);
+    })
+}
+
+MyPromise.all = function (promises) {
+    return new MyPromise(function executor(resolve, reject) {
+        let count = 0;
+        let result = []
+        if (promises.length === 0) {
+            resolve(promises);
+            return;
+        }
+        for (let i = 0; i < promises.length; i++) {
+            promises[i].then((val) => {
+                done(val, i);
+            })
+            
+        }
+
+        function done(val, i) {
+            result[i] = val;
+            ++count;
+            if (promises.length === count) {
+                resolve(result);
+            }
+        }
+    })
+}
 
 function getNumber() {
     // generates a random whole number between 1 and 100 
@@ -68,3 +104,8 @@ numChecker(2000)
     .catch((err) => {
         console.log(err);
     })
+
+
+MyPromise.all([numChecker(1000), numChecker(2000), numChecker(1500)])
+    .then(console.log)
+    .catch(console.log);
