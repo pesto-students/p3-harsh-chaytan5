@@ -1,0 +1,15 @@
+{
+  "name": "ex-5.4",
+  "version": "1.0.0",
+  "description": "math operations",
+  "type": "commonjs",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chetan",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}

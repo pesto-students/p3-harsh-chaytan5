@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    --primary-color: #B91C1C;
+    --dark-gray: #475569;
+    --secondary-color: #faebd7;
+}
+
+.container-body {
+    margin: auto;
+    max-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* align-items: baseline; */
+    /* background-color: lightcoral; */
+}
+
+
+
+.container-body>article {
+    width: 400px;
+}
+
+.container-body>img {
+    max-width: 400px;
+    margin: 1rem 0;
+}
+
+.container-body article h2 {
+    margin: 1rem 0;
+}
+
+.container-header {
+    background-color: aqua;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 150px;
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 41px;
+    border-bottom-right-radius: 41px;
+    color: #faebd7;
+}
+
+.container-header h1 {
+    position: relative;
+    top: 10%;
+    width: 700px;
+    margin: auto;
+}
+
+.container-form {
+    padding: 20px;
+}
+
+.container-form h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.container-form div {
+    text-align: center;
+    padding: 10px;
+}
+
+#button-signup {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    border-radius: 41px;
+    border: none
+}
+
+#button-signup:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition-duration: 0.2s;
+}
+
+.container-footer {
+    height: 100px;
+    background-color: var(--dark-gray);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+}
+
+.container-footer h2 {
+    margin-bottom: 20px;
+}
+
+.container-footer p {
+    margin: 20px;
+    display: inline;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}

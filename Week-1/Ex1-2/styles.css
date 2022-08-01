@@ -1,0 +1,142 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    --off-white: #f0f0f0;
+    --dark-gray: #454545;
+    --footer-blue: #43689b;
+}
+
+.navigation {
+    background-color: var(--off-white);
+    position: relative;
+    width: 50px;
+    height: 650px;
+}
+
+.sidebar {
+    position: absolute;
+}
+
+.sidebar li {
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+.sidebar li i {
+    color: black;
+}
+
+.header-container {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    height: 80%;
+    width: 96.5%;
+}
+
+.album-container {
+    position: relative;
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: 300px;
+}
+
+.album-container img {
+    padding: 25px;
+}
+
+.album-details {
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    width: 50%;
+    color: white;
+}
+
+.album-details h1 {
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.album-details h5 {
+    font-weight: 200;
+    padding-bottom: 3px;
+}
+
+.album-actions {
+    position: absolute;
+    left: 320px;
+    top: 260px;
+    color: white;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding-right: 1rem;
+}
+
+.songs-container {
+    position: relative;
+    top: 20px;
+    margin-left: 0.5rem;
+    width: 99.4%;
+    border-collapse: collapse;
+}
+
+
+.song-details td {
+    padding: 0.5rem;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+.link a {
+    border: 1.5px solid var(--dark-gray);
+    text-decoration: none;
+    color: blue;
+    margin-left: 10rem;
+}
+
+.song-player {
+    background-color: var(--footer-blue);
+    position: fixed;
+    top: 85%;
+    width: 100%;
+    height: 115px;
+}
+
+.song-player img {
+    max-width: 95px;
+    padding: 0.5rem;
+}
+
+.song-name {
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    color: white;
+}
+
+.song-name h5 {
+    padding-bottom: 0.75rem;
+    font-weight: 100;
+}
+
+.song-player ul {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    color: white;
+}
+
+.song-player ul li {
+    margin-left: 9rem;
+}
