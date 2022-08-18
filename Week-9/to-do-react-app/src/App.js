@@ -8,12 +8,17 @@ function App() {
 	const [todos, setTodos] = useState([]);
 
 	return (
-		<div>
-			<header>
+		<div className='container-main'>
+			<header className='header'>
 				<h1>Chaytan's ToDo App</h1>
 			</header>
-			<Form todos={todos} setTodos={setTodos} setInputText={setInputText} inputText={inputText} />
-			<TodoList setTodos={setTodos} todos={todos} />
+			<Form
+				todos={todos}
+				setTodos={setTodos}
+				setInputText={setInputText} inputText={inputText} />
+			<TodoList
+				setTodos={setTodos}
+				todos={todos} />
 		</div>
 	)
 }

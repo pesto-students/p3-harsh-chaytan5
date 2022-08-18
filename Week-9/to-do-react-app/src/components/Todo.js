@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Todo({text, todos, setTodos, todo}) {
-    
+function Todo({ text, todos, setTodos, todo }) {
+
     function deleteHandler() {
         setTodos(todos.filter((el) => el.id !== todo.id))
-    } 
+    }
 
     function completeHandler() {
         setTodos(todos.map((item) => {
@@ -18,10 +18,10 @@ function Todo({text, todos, setTodos, todo}) {
     }
 
     return (
-        <div>
-            <li>{text}</li>
-            <button onClick={completeHandler}>Completed</button>
-            <button onClick={deleteHandler}>Delete</button>
+        <div className='todo-container'>
+            <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
+            <button onClick={completeHandler} className='btn complete-btn'><i class="fa-solid fa-check"></i></button>
+            <button onClick={deleteHandler} className='btn delete-btn'><i class="fa-solid fa-trash"></i></button>
         </div>
     );
 }

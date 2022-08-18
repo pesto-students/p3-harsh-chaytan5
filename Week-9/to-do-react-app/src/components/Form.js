@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
@@ -17,9 +17,10 @@ function Form({ setInputText, todos, setTodos, inputText }) {
         setInputText('');
     }
     return (
-        <form>
-            <input onChange={inputTextHandler} value={inputText} type="text" />
-            <button onClick={submitTodoHandler} type='submit'>Add Task</button>
+        <form className='container-form'>
+            <input className='input' onChange={inputTextHandler} value={inputText} type="text" placeholder='Add a task' />
+            
+            <button className='submit-btn btn' onClick={submitTodoHandler} type='submit'><i class="fa-solid fa-plus"></i></button>
         </form>
     )
 }

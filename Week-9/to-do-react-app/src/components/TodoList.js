@@ -4,8 +4,8 @@ import Todo from './Todo';
 function TodoList({todos, setTodos}) {
 
     return (
-        <div>
-            <ul>
+        <div className='container-todolist'>
+            <ul className='todolist'>
                 {todos.map((todo) => <Todo
                     setTodos={setTodos}
                     todos={todos}
