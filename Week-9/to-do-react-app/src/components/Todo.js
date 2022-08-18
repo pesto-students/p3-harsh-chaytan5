@@ -20,8 +20,8 @@ function Todo({ text, todos, setTodos, todo }) {
     return (
         <div className='todo-container'>
             <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
-            <button onClick={completeHandler} className='btn complete-btn'><i class="fa-solid fa-check"></i></button>
-            <button onClick={deleteHandler} className='btn delete-btn'><i class="fa-solid fa-trash"></i></button>
+            <button onClick={completeHandler} className='btn complete-btn'><i className="fa-solid fa-check"></i></button>
+            <button onClick={deleteHandler} className='btn delete-btn'><i className="fa-solid fa-trash"></i></button>
         </div>
     );
 }

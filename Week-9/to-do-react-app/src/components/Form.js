@@ -27,8 +27,8 @@ function Form({ setInputText, todos, setTodos, inputText }) {
     return (
         <form className='container-form'>
             <input className='input' onChange={inputTextHandler} value={inputText} type="text" placeholder='Add a task' />
-            
-            <button className='submit-btn btn' onClick={submitTodoHandler} type='submit'><i class="fa-solid fa-plus"></i></button>
+
+            <button className='submit-btn btn' onClick={submitTodoHandler} type='submit'><i className="fa-solid fa-plus"></i></button>
         </form>
     )
 }
