@@ -11,10 +11,18 @@ function Form({ setInputText, todos, setTodos, inputText }) {
 
     function submitTodoHandler(event) {
         event.preventDefault();
-        setTodos([
-            ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }
-        ]);
-        setInputText('');
+        try {
+            if (inputText === '') {
+                throw new Error('Tasks cannot be blank')
+            } else {
+                setTodos([
+                    ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }
+                ]);
+                setInputText('');
+            }
+        } catch (e) {
+            alert("Tasks can't be blank");
+        }
     }
     return (
         <form className='container-form'>
