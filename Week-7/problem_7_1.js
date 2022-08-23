@@ -148,6 +148,9 @@ class SinglyLinkedList {
 
     }
 
+    // Time complexity : O(n)
+    // Space complexity : o(1)
+    
     reverse() {
         if (this.size <= 1) return this;
 
