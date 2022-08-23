@@ -194,3 +194,5 @@ try {
 } catch (e) {
     console.warn(e);
 }
+
+export default SinglyLinkedList;
