@@ -68,11 +68,13 @@ function paranthesisChecker(str) {
     }
 }
 
+export default MyStack;
+
 try {
     let string = '{([])}'; // true
     let string2 = '[()]{}{()()}'; // true
     let string3 = '([]' // false
-    
+
     console.log(paranthesisChecker(string3));
 
 
