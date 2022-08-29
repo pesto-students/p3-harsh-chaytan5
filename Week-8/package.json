@@ -1,0 +1,12 @@
+{
+  "name": "week-8",
+  "version": "1.0.0",
+  "description": "Week-8 assignment",
+  "main": "problem_8_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chetan",
+  "license": "ISC",
+  "type" :"module"
+}
