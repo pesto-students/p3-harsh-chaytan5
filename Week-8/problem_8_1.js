@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-class BST {
+export default class BST {
     constructor() {
         this.root = null;
     }
