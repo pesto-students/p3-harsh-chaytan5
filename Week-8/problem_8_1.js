@@ -101,7 +101,8 @@ class BST {
     }
 }
 
-
+// Time complexity : O(n) where n is the number of nodes
+// Space complexity : O(n)
 function findDepthRecursive(root) {
     if (root === null) return 0;
 
@@ -111,6 +112,8 @@ function findDepthRecursive(root) {
     return 1 + Math.max(lh, rh);
 }
 
+// Time complexity : O(n)
+// Space complexity : O(n)
 function findDepth(root) {
     let current = root;
 
