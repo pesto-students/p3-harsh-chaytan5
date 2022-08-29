@@ -2,6 +2,10 @@
 
 import BST from './problem_8_1.js';
 
+
+// Time complexity : O(n)
+// Space complexity : o(1)
+
 function isValidBST(bst) {
     let root = bst.root;
     return checkBST(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER)
