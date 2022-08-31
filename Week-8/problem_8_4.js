@@ -51,6 +51,8 @@ class MyGraph {
 
 }
 
+// Time complexity : O(V+E) V: Vertices & E: Edges
+// Space complexity : O(V)
 // breadth first search
 function findPath(graph, source, destination) {
     let list = graph.adjacencyList;

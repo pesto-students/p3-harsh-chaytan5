@@ -1,6 +1,7 @@
 // Find the town judge
 
-
+// Time complexity : O(n)
+// Space complexity : O(n)
 function findJudge(n, trust) {
     if (!Array.isArray(trust)) throw 'Invalid trust array';
     if (n < 1) return -1;
