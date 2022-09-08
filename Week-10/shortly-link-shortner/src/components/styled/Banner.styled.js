@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledBanner = styled.div`
     width: 100%;
-    height: 250px;
+    padding: 2rem;
     background-color: ${({ theme }) => theme.colors.darkViolet};
     background-image: url('./images/bg-boost-desktop.svg');
     /* background-repeat: no-repeat; */
@@ -13,5 +13,4 @@ export const StyledBanner = styled.div`
     justify-content: center;
     align-items: center;
     color: #fff;
-
 `
