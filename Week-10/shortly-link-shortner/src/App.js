@@ -4,6 +4,7 @@ import { GlobalStyle } from "./components/styled/Global.styled";
 import { ThemeProvider } from "styled-components";
 import Shortener from "./components/Shortener";
 import Content from "./components/Content";
+import Banner from "./components/Banner";
 
 const theme = {
   colors: {
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <Shortener />
         <Content />
+        <Banner />
       </Container>
     </ThemeProvider>
   );
