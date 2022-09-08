@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Shortener from "./components/Shortener";
 import Content from "./components/Content";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 const theme = {
   colors: {
@@ -27,6 +28,7 @@ function App() {
         <Shortener />
         <Content />
         <Banner />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
