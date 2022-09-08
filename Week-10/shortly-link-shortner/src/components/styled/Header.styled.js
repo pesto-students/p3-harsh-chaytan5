@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     background-color: #fff;
-    padding: 0 40px;
+    padding: 0 100px 70px;
+    overflow: hidden;
     `;
 
 export const Nav = styled.nav`
@@ -37,7 +38,8 @@ export const Logo = styled.img`
 `
 
 export const Img = styled.img`
-    width: 700px;
+    width: 650px;
     position: relative;
-    left: 110px
+    left: 200px;
+    
 `

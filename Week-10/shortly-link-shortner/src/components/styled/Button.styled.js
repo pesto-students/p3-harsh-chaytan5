@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     border: 0;
-    padding:  0.7rem 1.5rem;  
+    padding:${({ padding }) => padding || '0.7rem 1.5rem'}  ;  
     margin: ${({ margin }) => margin || '1rem'};
     font-weight: bold;
     font-size: ${({ fontSize }) => fontSize || '1rem'};
