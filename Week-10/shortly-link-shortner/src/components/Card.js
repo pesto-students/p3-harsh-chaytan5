@@ -6,7 +6,7 @@ export default function Card({ top, item }) {
     return (
         <Flex direction='column' padding='0' top={top}>
             <Img className="img-container">
-                <img src={`./images/${item.image}`} alt="" srcset="" />
+                <img src={`./images/${item.image}`} alt="description"/>
             </Img>
 
             <StyledCard>
