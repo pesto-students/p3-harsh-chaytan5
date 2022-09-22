@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Step Counter App using Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made using React and Redux.
+
+It is a simple project having functionality to **Add Step** and **Reset Steps**.
+
+The app shows the number of steps at the top above the buttons.
+
+The step counter increases by 1 when `Add a Step` button is clicked and it goes back to 0 when `Reset` button is clicked.
+
+## Screenshot
+
+![Step counter app screenshot](./public/Screenshot.jpg)
 
 ## Available Scripts
 
