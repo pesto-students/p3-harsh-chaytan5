@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Lightswitch App using redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a very simple lightswitch app made using React and Redux.
+
+It has a button which when clicked the light turns off and if it is clicked again, the light will turn on. 
 
 ## Available Scripts
 
