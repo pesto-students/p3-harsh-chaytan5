@@ -12,7 +12,9 @@ function App() {
 			<h3>You have walked {stepCount} steps today!</h3>
 			<button onClick={() => dispatch(actions.addStep())}>Add a Step</button>
 			<br />
-			<button onClick={() => dispatch(actions.reset())}>Reset</button>
+			<button className="reset-btn" onClick={() => dispatch(actions.reset())}>
+				Reset
+			</button>
 		</div>
 	);
 }
