@@ -1,11 +1,15 @@
 import "./App.css";
+import { useSelector, useDispatch } from 'react-redux'
+import { flipLight } from "./actions";
 
 function App() {
+  const isLightOn = useSelector(state => state);
+  const dispatch = useDispatch();
+  const lightedness = isLightOn ? 'lit' : 'dark';
+
 	return (
 		<div className="App">
-			<header className="App-header">
-				
-			</header>
+			<h1>The room is {lightedness} </h1>
 		</div>
 	);
 }
