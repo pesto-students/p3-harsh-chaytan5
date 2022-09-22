@@ -8,8 +8,9 @@ function App() {
   const lightedness = isLightOn ? 'lit' : 'dark';
 
 	return (
-		<div className="App">
-			<h1>The room is {lightedness} </h1>
+		<div className={`room ${lightedness}`}>
+      <h1>The room is {lightedness} </h1>
+      <button onClick={()=> dispatch(flipLight())}>Flip</button>
 		</div>
 	);
 }
