@@ -12,6 +12,11 @@ async function getLatLong(city) {
 	if (!latLongData.length) {
 		throw new Error("ENOENT");
 	}
+
+	let lat = latLongData[0].lat;
+	let lon = latLongData[0].lon;
+
+	return { lat, lon };
 }
 
 async function getCurrentWeather(lat, lon) {
