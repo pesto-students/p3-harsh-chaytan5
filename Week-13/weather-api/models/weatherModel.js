@@ -1,10 +1,10 @@
-import { fetch } from "node-fetch";
+import fetch from "node-fetch";
 
 const API_KEY = "170cec7803bff371fc0fcf1e9126a03b";
 
 async function getLatLong(city) {
 	const latLongRes = await fetch(
-		`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APPID}`
+		`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
 	);
 
 	const latLongData = await latLongRes.json();
@@ -32,7 +32,7 @@ async function getCurrentWeather(lat, lon) {
 // @desc  get weather forecast of 5 days for a location
 async function getWeatherForecast(lat, lon) {
 	const forecastRes = await fetch(
-		`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APPID}&units=metric`
+		`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
 	);
 
 	const forecastData = await forecastRes.json();
