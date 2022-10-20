@@ -28,3 +28,14 @@ async function getCurrentWeather(lat, lon) {
 
 	return weatherData;
 }
+
+// @desc  get weather forecast of 5 days for a location
+async function getWeatherForecast(lat, lon) {
+	const forecastRes = await fetch(
+		`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APPID}&units=metric`
+	);
+
+	const forecastData = await forecastRes.json();
+
+	return forecastData;
+}
