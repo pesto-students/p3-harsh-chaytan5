@@ -2,6 +2,7 @@ import fetch from "node-fetch";
 
 const API_KEY = "170cec7803bff371fc0fcf1e9126a03b";
 
+// @desc  	get latitude and longitude for a location
 async function getLatLong(city) {
 	const latLongRes = await fetch(
 		`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
@@ -19,6 +20,8 @@ async function getLatLong(city) {
 	return { lat, lon };
 }
 
+// @desc  	get current weather for a location
+// @route		/:city
 async function getCurrentWeather(lat, lon) {
 	const weatherRes = await fetch(
 		`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
@@ -29,7 +32,8 @@ async function getCurrentWeather(lat, lon) {
 	return weatherData;
 }
 
-// @desc  get weather forecast of 5 days for a location
+// @desc  	get weather forecast of 5 days for a location
+// @route		/:city/:days
 async function getWeatherForecast(lat, lon) {
 	const forecastRes = await fetch(
 		`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
