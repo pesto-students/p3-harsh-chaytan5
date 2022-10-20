@@ -1,6 +1,5 @@
 import fetch from "node-fetch";
-
-const API_KEY = "170cec7803bff371fc0fcf1e9126a03b";
+import API_KEY from "../tokens";
 
 // @desc  	get latitude and longitude for a location
 async function getLatLong(city) {
