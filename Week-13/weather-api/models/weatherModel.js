@@ -39,3 +39,5 @@ async function getWeatherForecast(lat, lon) {
 
 	return forecastData;
 }
+
+export { getLatLong, getCurrentWeather, getWeatherForecast };
