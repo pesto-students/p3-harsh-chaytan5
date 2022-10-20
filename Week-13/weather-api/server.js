@@ -1,4 +1,5 @@
 import http from "http";
+import { getWeather } from "./controllers/weatherController.js";
 
 const server = http.createServer((req, res) => {
 	if (req.url.match(/\/([A-Za-z]+)\/([0-9]+)/)) {
@@ -6,6 +7,8 @@ const server = http.createServer((req, res) => {
 		const days = req.url.split("/")[2];
 	} else if (req.url.match(/\/([A-Za-z]+)/)) {
 		const city = req.url.split("/")[1];
+
+		getWeather(req, res, city);
 	} else {
 		res.writeHead(404, { "Content-Type": "application/json" });
 		res.end(JSON.stringify({ message: "Route Not Found!" }));
